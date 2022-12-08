@@ -1,0 +1,109 @@
+/*The note itself*/
+.note {
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 250px;
+    background-image: url(/images/note.png);
+    font-family: 'Handlee', cursive;
+    transition: 1000ms;
+
+
+}
+
+.animation:last-child{
+    animation: fadeIn 3s;
+}
+
+
+
+
+
+/*Delete button on hover appears */
+.note:hover svg {
+    opacity: 1;
+}
+
+
+
+/*Current time and date on top of the note*/
+.currentTime {
+    position: relative;
+    left: 5px;
+    top: 21px;
+    color: red;
+    font-size: 15px;
+
+
+
+}
+
+/*User's note text*/
+.noteInnerText {
+    position: relative;
+    left: 7px;
+    top: 21px;
+    width: 180px;
+    height: 135px;
+    overflow: scroll;
+    z-index: 1;
+    margin-bottom: 1px;
+
+
+}
+
+/*User's destionation date buttom right of the note*/
+.destinationDateDiv {
+    position: relative;
+    left: 62px;
+    top: 19px;
+    z-index: 3;
+
+
+}
+
+/*Delete btn*/
+svg {
+    position: relative;
+    left: 195px;
+    top: 5px;
+    opacity: 0;
+
+
+}
+
+/*Change color of delete btn when hover*/
+svg:hover {
+    color: rgb(199, 48, 48);
+
+
+}
+
+.load{
+    animation: load 2s;
+}
+
+@keyframes load {
+    from{
+        opacity: 0;
+        margin: -3;
+        transform: scale(0.7);
+    }
+    to{
+        opacity: 100;
+        margin: 0;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+
+    }
+
+    to {
+        opacity: 100;
+
+    }
+
+}

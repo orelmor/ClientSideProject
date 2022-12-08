@@ -1,0 +1,58 @@
+.noteBook {
+
+    background-image: url(/images/noteBook.png);
+    width: 240px;
+    height: 375px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 3px;
+    transition: 300ms;
+    background-color: rgb(197, 191, 156);
+}
+
+.noteBook:hover {
+    box-shadow: 4px 8px 3px 5px rgba(63, 59, 59, 0.699);
+    transition: 300ms;
+}
+
+#textArea {
+    position: relative;
+    background-color: rgba(139, 69, 19, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 60px;
+    width: 220px;
+    height: 130px;
+    z-index: 50;
+    line-height: 27px;
+
+
+}
+
+#destinationDate {
+
+    position: relative;
+    background-color: rgba(139, 69, 19, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    left: 10px;
+    top: 60px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 60;
+
+}
+
+#addTaskBtn {
+    position: relative;
+    top: 150px;
+    left: 2%;
+}
+
+
+#resetBtn {
+    position: relative;
+    top: 83px;
+    left: 30%;
+}
